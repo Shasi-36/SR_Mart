@@ -5,7 +5,7 @@ import { useCart } from "../Context/CartContext";
 
 const AcSingle = () => {
   const { id } = useParams();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
 
   const product = acData.find((item) => item.id === id);
   return (
