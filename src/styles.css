@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+margin: 0 ;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: aliceblue;
+    position: fixed;
+}
+
+.navlogo {
+    margin-left: 10px;
+    background: #ffff;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+.navcart{
+    margin-right: 10px;
+    text-decoration: none;
+    background: #ffff;
+}
+
+.navsearch input{
+    border-radius: 10px;
+    height: 30px;
+}
+
+.navlogin button{
+    width: 50px;
+    background: rgb(19, 120, 244);
+    border-radius: 5px;
+}
+
+.subnav {
+    background: gray;
+   margin-top: 50px;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+        
+}
+
+.subnav ul{
+    display: flex;
+
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: beige;
+}
+
+.subnav ul li {
+    color: beige;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.subnav ul li:hover {
+    border-bottom: 1px solid beige;
+    color: black;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.Link {
+    text-decoration: none;
+    color: black;
+}
+
+.pagecontainer {
+    background: gainsboro;
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+}
+
+.prductshell {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.productimg {
+    display: grid;
+    grid-template-columns: repeat(6,200px);
+    gap: 5px;
+    padding-left: 30px;
+    object-fit: cover;
+}
+
+.imagebox {
+    width: 100%;
+}
+
+.title {
+    padding-left: 10px;
+}
+.image {
+    width: 80%;
+    object-fit: cover;
+    background: gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn {
+    margin-left: 10px;
+    width: 80px;
+    height: 30px;
+    background: rgb(15, 15, 43);
+    border: none;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+color:rgb(15, 15, 43) ;
+background: #ffff;
+transition: 0.5s;
+}
+
+.productpage {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    gap: 5px;
+    padding-left: 50px;
+    }
+
+.proimage {
+    width: 100%;
+}
+
+.model {
+    text-align: center;
+}
+
+.fullpage {
+    display: flex;
+    background: gainsboro;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.filterproduct {
+   
+    padding-top: 120px;
+    padding-left: 10px;
+    width: 150px;
+    border-right: 1px solid black;
+
+}
+
+.singlepage {
+    padding-top: 90px;
+    display: flex;
+    background: beige;
+    height: 100vh;
+}
+
+.pageimg {
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-basis: 40%;
+    
+}
+
+.singleimg {
+    width: 80%;
+}
+
+.singleimg img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.proddetails {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.probtn {
+    width: 100px;
+    height: 30px;
+    background: rgb(8, 179, 231);
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+.probtn:hover {
+    background-color: rgb(24, 21, 17);
+    color: bisque;
+    transform: scale(1.2);
+    transition:  transform 0.5s ease-in-out;
+}
+
+
+.cart-section {
+    display: flex;
+    border: 3px double gray;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.cart-img img {
+    width: 50%;
+}
+
+.cart-details {
+    width: 50%;
+}
+
+.cart {
+    color: white;
+}
+
+.cart span {
+    color: orangered;
+}
+
+.cart span {
+    font-size: x-large;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.y-cart {
+    text-align: center;
+}
+
+.empty {
+    text-align: center;
+}
+
+.removeBtn {
+    padding: 10px;
+    width: 10rem;
+    background-color: rgb(241, 79, 79);
+    color: white;
+}
+
+.removeBtn:hover {
+    background-color: red;
+    cursor: pointer;
+}
