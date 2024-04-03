@@ -5,7 +5,7 @@ import { useCart } from "../Context/CartContext";
 
 const SpeakerSingle = () => {
   const { id } = useParams();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
   const product = speakerData.find((item) => item.id === id);
   return (
     <div className="singlepage">

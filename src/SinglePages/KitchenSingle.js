@@ -5,7 +5,7 @@ import { useCart } from "../Context/CartContext";
 
 const KitchenSingle = () => {
   const { id } = useParams();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
   const product = kitchenData.find((item) => item.id === id);
   return (
     <div className="singlepage">

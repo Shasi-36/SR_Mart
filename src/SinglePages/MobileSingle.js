@@ -5,7 +5,7 @@ import { useCart } from "../Context/CartContext";
 
 const MobileSingle = () => {
   const { id } = useParams();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
   const product = mobileData.find((item) => item.id === id);
   console.log(product);
   return (

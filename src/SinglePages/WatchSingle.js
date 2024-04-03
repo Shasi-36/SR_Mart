@@ -5,7 +5,7 @@ import { useCart } from "../Context/CartContext";
 
 const WatchSingle = () => {
   const { id } = useParams();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
 
   const product = watchData.find((item) => item.id === id);
   return (

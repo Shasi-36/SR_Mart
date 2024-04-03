@@ -5,7 +5,7 @@ import { useCart } from "../Context/CartContext";
 
 const TvSingle = () => {
   const { id } = useParams();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
   const product = tvData.find((item) => item.id === id);
   return (
     <div className="singlepage">
